@@ -1,0 +1,11 @@
+/*Вывести все товары, причем для товаров из категорий 3 и 5 и ценой 
+от 20 EUR добавить наценку в 12.5%
+
+проекция: все поля + поле Price_up*/
+
+SELECT *,
+CASE
+WHEN category_id IN (3, 5) AND price >= 20 THEN price * 1.125
+ELSE price
+END AS Price_up
+FROM Products
