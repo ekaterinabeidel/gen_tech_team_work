@@ -4,8 +4,8 @@
 
 
 SELECT 
-title, 
-duration_secs, 
-author_id
-FROM 
-tracks;
+tracks.title, 
+tracks.duration_secs, 
+users.fullname
+FROM tracks
+JOIN users ON tracks.author_id = users.id
