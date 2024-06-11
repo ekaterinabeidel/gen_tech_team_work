@@ -1,5 +1,6 @@
 select 
 title,
 duration_secs,
-author_id
+fullname
 from tracks
+join users ON tracks.author_id = users.id
