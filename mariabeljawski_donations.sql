@@ -1,3 +1,4 @@
+
 -- Задача. Добавить несколько произвольных пожертвований в таблицу donations
 
 INSERT INTO donations (recipient_id, sender_id, amount)
