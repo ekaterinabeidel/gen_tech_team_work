@@ -1,12 +1,10 @@
--- Задача. Создать таблицу пожертвований 
-create table donations (
-	id int primary key auto_increment,
-	created_at timestamp default current_timestamp,
 
-	recipient_id int not null,
-	sender_id int not null,
-	amount double not null check(amount > 0),
+-- Задача. Добавить несколько произвольных пожертвований в таблицу donations
 
-	foreign key (recipient_id) references users(id),
-	foreign key (sender_id) references users(id)
-)
+INSERT INTO donations (recipient_id, sender_id, amount)
+VALUES
+(1, 2, 100.50),
+(2, 1, 100),
+(3, 1, 50.50),
+(1, 3, 50.50),
+(2, 3, 50.50);
