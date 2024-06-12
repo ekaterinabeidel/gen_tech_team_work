@@ -9,4 +9,4 @@ create table donations (
     description char(32),
     foreign key (user1_id) references users(id),
     foreign key (user2_id) references users(id)
-);
+ );
