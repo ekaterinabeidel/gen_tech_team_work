@@ -1,4 +1,4 @@
-INSERT INTO reactions
+INSERT INTO reactions (value, author_id, track_id )
 VALUES
     (5, 1, 1),
     (4, 1, 2),
