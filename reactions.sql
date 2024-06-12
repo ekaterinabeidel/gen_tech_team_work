@@ -1,4 +1,4 @@
-Задача. Добавить несколько оценок в таблицу reactions
+-- Задача. Добавить несколько оценок в таблицу reactions
 
 INSERT INTO reactions (value, author_id, track_id)
  VALUES
