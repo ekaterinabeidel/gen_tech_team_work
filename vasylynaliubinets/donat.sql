@@ -1,7 +1,7 @@
 INSERT INTO donations (value, recipient_id, sender_id)
 VALUES
-	(1,4,60),
-	(1,4,350),
+	(1,2,60),
+	(1,3,350),
 	(1,4,50),
-	(1,4,990)
-    (1,4,90)
+	(1,1,990)
+    (1,5,90)
